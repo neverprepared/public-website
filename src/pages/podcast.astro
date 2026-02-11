@@ -1,0 +1,31 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Podcast | ${SITE_TITLE}`} description="The Never Prepared podcast." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="page">
+				<h1>Podcast</h1>
+				<p>Coming soon.</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page {
+		max-width: 720px;
+		margin: 4em auto;
+		padding: 0 1em;
+	}
+</style>
